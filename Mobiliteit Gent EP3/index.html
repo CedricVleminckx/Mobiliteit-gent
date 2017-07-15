@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+
+#headerButtons{
+  margin: auto;
+}
+
+#map {
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
+ }
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div id="headerButtons" class="w3-col s3">
+      <a id="home" class="w3-button w3-block w3-red">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a id="fietsverlening" class="w3-button w3-block w3-green">FIETSDIENSTVERLENINGEN</a>
+    </div>
+    <div class="w3-col s3">
+      <a id="parkeerGarage" class="w3-button w3-block w3-blue">BEZETTING PARKEERGARAGES</a>
+    </div>
+    <div class="w3-col s3">
+      <a id="fietstellingen" class="w3-button w3-block w3-yellow">FIETSTELLINGEN</a>
+    </div>
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span id="title" class="w3-tag w3-wide"></span></h5>
+  </div>
+</div>
+
+<div id="map"></div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p class="w3-medium">&copy;Mobiliteit Gent</p>
+  <p class="w3-small">Contact: cedric.vlemickx@student.odisee.be</p>
+</footer>
+
+<script src="https://datatank.stad.gent/4/mobiliteit/fietsdienstverlening"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/fietsverlening.js"></script>
+<script src="js/Chart.bundle.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7M5AeBioBbySfnQT9TTaeDKVJFmkjQX4&callback=initMap" async defer type="text/javascript"></script>
+
+
+</body>
+</html>
